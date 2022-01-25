@@ -2,9 +2,6 @@ import { populateObject, cssPower } from "./functions.js";
 
 let root = document.documentElement;
 
-const colorOne = document.getElementById("colorOne");
-const colorTwo = document.getElementById("colorTwo");
-
 const listOfPKeys = [
   "--body-bg",
   "--rectangle-bg",
@@ -15,6 +12,9 @@ const listOfPKeys = [
   "--icon-color",
   "--backgroundIcon-color",
 ];
+
+const colorOne = document.getElementById("colorOne");
+const colorTwo = document.getElementById("colorTwo");
 
 const listOfValuesOne = [
   "#fff",
