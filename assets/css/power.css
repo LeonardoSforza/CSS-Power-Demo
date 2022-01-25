@@ -1,0 +1,42 @@
+:root {
+  --body-bg: #fff;
+  --rectangle-bg: rgba(196, 196, 196, 1);
+  --sectionTitle-color: #000;
+  --card-bg: rgba(196, 196, 196, 1);
+  --cardText-color: #000;
+  --cardItem-bg: #e7e7e7;
+  --icon-color: rgba(35, 31, 32, 100%);
+  --backgroundIcon-color: rgba(35, 31, 32, 10%);
+}
+
+body {
+  background: var(--body-bg);
+}
+
+.iconBackground {
+  fill: var(--backgroundIcon-color);
+}
+
+.rectangle {
+  background-color: var(--rectangle-bg);
+}
+
+.section-title {
+  color: var(--sectionTitle-color);
+}
+
+.card {
+  background-color: var(--card-bg);
+}
+
+.card-icon {
+  background-color: var(--cardItem-bg);
+}
+
+.iconPath {
+  fill: var(--icon-color);
+}
+
+.card-text {
+  color: var(--cardText-color);
+}

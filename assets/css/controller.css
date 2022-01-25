@@ -1,0 +1,30 @@
+.controller {
+  position: absolute;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  background-color: rgb(187, 157, 101);
+  display: flex;
+}
+
+.color {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.color:hover {
+  cursor: pointer;
+}
+
+#colorOne {
+  background-color: thistle;
+}
+
+#colorTwo {
+  background-color: rgb(179, 245, 236);
+}
+
+#colorThree {
+  background-color: #247cff;
+}
