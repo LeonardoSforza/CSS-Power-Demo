@@ -1,70 +1,48 @@
-import { populateObject, cssPower } from "./functions.js";
-
-let root = document.documentElement;
-
-const listOfPKeys = [
-  "--body-bg",
-  "--rectangle-bg",
-  "--sectionTitle-color",
-  "--card-bg",
-  "--cardText-color",
-  "--cardItem-bg",
-  "--icon-color",
-  "--backgroundIcon-color",
-];
+import { ultimateCSSPower } from "./functions.js";
 
 // Buttons
 const colorOne = document.getElementById("colorOne");
 const colorTwo = document.getElementById("colorTwo");
 
-const listOfValuesOne = [
-  "#fff",
-  "rgba(196, 196, 196, 1)",
-  "#000",
-  "rgba(196, 196, 196, 1)",
-  "#000",
-  "#e7e7e7",
-  "rgba(35, 31, 32, 100%)",
-  "rgba(35, 31, 32, 10%)",
-];
+const listOfValuesOne = {
+  "--body-bg": "#fff",
+  "--rectangle-bg": "rgba(196, 196, 196, 1)",
+  "--sectionTitle-color": "#000",
+  "--card-bg": "rgba(196, 196, 196, 1)",
+  "--cardText-color": "#000",
+  "--cardItem-bg": "#e7e7e7",
+  "--icon-color": "rgba(35, 31, 32, 100%)",
+  "--backgroundIcon-color": "rgba(35, 31, 32, 10%)",
+};
 
-const listOfValuesTwo = [
-  "#000",
-  "#fff",
-  "#fff",
-  "#1C1C1C",
-  "#fff",
-  "#1C1C1C",
-  "#fff",
-  "rgba(255, 255, 255, 40%)",
-];
+ultimateCSSPower(listOfValuesOne, colorOne);
 
-let colorOneStyle = {};
-let colorTwoStyle = {};
+const listOfValuesTwo = {
+  "--body-bg": "#000",
+  "--rectangle-bg": "#fff",
+  "--sectionTitle-color": "#fff",
+  "--card-bg": "#1C1C1C",
+  "--cardText-color": "#fff",
+  "--cardItem-bg": "#1C1C1C",
+  "--icon-color": "#fff",
+  "--backgroundIcon-color": "rgba(255, 255, 255, 40%)",
+};
 
-populateObject(listOfPKeys, listOfValuesOne, colorOneStyle);
-populateObject(listOfPKeys, listOfValuesTwo, colorTwoStyle);
-
-cssPower(colorOne, colorOneStyle, root);
-cssPower(colorTwo, colorTwoStyle, root);
+ultimateCSSPower(listOfValuesTwo, colorTwo);
 
 // *************************************************************************
 
 const colorThree = document.getElementById("colorThree");
 
-const listOfValuesThree = [
-  "#247CFF",
-  "#D9F2ED",
-  "#fff",
-  "#fff",
-  "#323232",
-  "#D9F2EA",
-  "#000",
-  "#F2DFD9",
-];
+const listOfValuesThree = {
+  "--body-bg": "#247CFF",
+  "--rectangle-bg": "#D9F2ED",
+  "--sectionTitle-color": "#fff",
+  "--card-bg": "#fff",
+  "--cardText-color": "#323232",
+  "--cardItem-bg": "#D9F2EA",
+  "--icon-color": "#000",
+  "--backgroundIcon-color": "#F2DFD9",
+};
 
-let colorThreeStyle = {};
-
-populateObject(listOfPKeys, listOfValuesThree, colorThreeStyle);
-
-cssPower(colorThree, colorThreeStyle, root);
+ultimateCSSPower(listOfValuesThree, colorThree);

@@ -1,13 +1,9 @@
-export const populateObject = (keys, value, parent) => {
-  keys.forEach((key, i) => (parent[key] = value[i]));
-};
-
-export const cssPower = (element, object, root) => {
-  element.addEventListener("click", () => {
-    for (const [key, value] of Object.entries(object)) {
-      root.style.setProperty(key, value);
+export const ultimateCSSPower = (listOfChanges, btn) => {
+  btn.addEventListener("click", () => {
+    for (const [key, value] of Object.entries(listOfChanges)) {
+      document.documentElement.style.setProperty(key, value);
     }
   });
 };
 
-export default { populateObject, cssPower };
+export default { ultimateCSSPower };
