@@ -13,6 +13,7 @@ const listOfPKeys = [
   "--backgroundIcon-color",
 ];
 
+// Buttons
 const colorOne = document.getElementById("colorOne");
 const colorTwo = document.getElementById("colorTwo");
 
